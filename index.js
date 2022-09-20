@@ -1,21 +1,6 @@
 const btn = document.getElementById('btn');
 
-// btn.addEventListener('click', () => {
-//     const pr = fetch('https://reqres.in/api/users');
-//     pr.then(response => {
-//         const prthen = response.json();
-//         prthen.then(data => {
-//             console.log(data);
-//             const another_pr = fetch('https://reqres.in/api/users?page=2');
-//             another_pr.then(another_r => {
-//                 const another_f = another_r.json();
-//                 another_f.then(another_d => {
-//                     console.log(another_d);
-//                 })
-//             })
-//         })
-//     })
-// })
+
 
 // btn.addEventListener('click', () => {
 //     const pr = fetch('https://reqres.in/api/users');
@@ -55,7 +40,7 @@ const render = data => {
 }
 btn.addEventListener('click', () => {
     fetch('https://jsonplaceholder.typicode.com/users').then(response => response.json()).then(data => {
-        render(data)
+        render(data);
     })
 })
 
